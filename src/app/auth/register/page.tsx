@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Register page'
 };
 
-const LoginPage = () => {
+const RegisterPage = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <RegisterView />
@@ -14,4 +14,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
