@@ -17,8 +17,8 @@ const AuthLoginView = () => {
 
   const returnTo = searchParams.get('returnTo');
 
-  const [email, setEmail] = useState('test@test.com');
-  const [password, setPassword] = useState('test');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleSubmit = async (ev: React.FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
