@@ -1,12 +1,17 @@
-import { RegisterView } from "@/sections/auth/register/view";
-import { Metadata } from "next";
+import { RegisterView } from '@/sections/auth/register/view';
+import { Metadata } from 'next';
+import { Suspense } from 'react';
 
 export const metadata: Metadata = {
-  title: "Register page",
+  title: 'Register page'
 };
 
 const LoginPage = () => {
-  return <RegisterView />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <RegisterView />
+    </Suspense>
+  );
 };
 
 export default LoginPage;
