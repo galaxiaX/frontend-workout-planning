@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Workout Planning Web Application - Frontend ✨
 
-## Getting Started
+## Frontend 🏠
 
-First, run the development server:
+This is the frontend for the Workout Planning Web Application built using
+Next.js, TypeScript, and Tailwind CSS.
+
+## Backend 🔧
+
+The backend for this project can be found at
+[github.com/galaxiaX/backend-workout-planning](https://github.com/galaxiaX/backend-workout-planning)
+It was built with Node.js, Express, and MongoDB.
+
+### Getting Started 💻
+
+To get started with the project, follow these steps:
+
+1.Clone the repository:
+
+```bash
+git clone https://github.com/galaxiaX/frontend-workout-planning.git
+cd frontend-workout-planning
+```
+
+2.Install dependencies:
+
+```bash
+npm install
+```
+
+3.Set up environment variables: Copy the provided .env.example file to
+.env.local and update it with your configuration.
+
+```bash
+cp .env.example .env.local
+```
+
+Update the NEXT_PUBLIC_BASE_API variable in .env.local with the backend API base
+URL.
+
+```env
+NEXT_PUBLIC_BASE_API=http://localhost:8000
+```
+
+4.Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the development server at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Scripts 📜
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `npm run dev` : Runs the application in development mode.
+- `npm run build` : Builds the application for production.
+- `npm run start` : Starts the application in production mode.
+- `npm run lint` : Runs ESLint to check for linting errors.
 
-## Learn More
+### Project Structure 📂
 
-To learn more about Next.js, take a look at the following resources:
+- `app/` : Contains the Next.js pages.
+- `components/` : Contains React components.
+- `utils/` : Contains utility functions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Contributing 🤝
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to open issues or submit pull requests. For major changes, please open
+an issue first to discuss what you would like to change.
